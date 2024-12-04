@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ETCE || INGENIERIE</title>
   <link rel="stylesheet" href="output.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <title>ETCE || INGENIERIE</title>
 </head>
 <body class="overflow-x-hidden">
   <nav class="w-full fixed px-5 lg:px-8 lg:px[8%] py-4 flex items-center justify-between z-50">
@@ -27,7 +27,7 @@
     >Contact<img src="./images/arrow-icon.png" alt="icone" class="w-3">
     </a>
 
-    <button class="block md:hidden ml-3">
+    <button class="block md:hidden ml-3" onclick="openMenu()">
       <img src="./images/menu-black.png" alt="menu" class="w-6">
     </button>
     </div>
@@ -35,16 +35,16 @@
 
 <ul id="sideMenu" class="flex md:hidden flex-col gap-5 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 bg-rose-300 z-50 h-screen transition duration-700">
 
-<div class="absolute right-6 top-6">
-  <img src="./images/close-black.png" alt="croix" class="w-5">
+<div class="absolute right-6 top-6" onclick="closeMenu()">
+  <img src="./images/close-black.png" alt="croix" class="w-5 cursor-pointer">
 </div>
 
-  <li><a href="#home">Accueil</a></li>
-  <li><a href="#valeurs">Nos valeurs</a></li>
-  <li><a href="#prestations">Nos prestations</a></li>
-  <li><a href="#realisations">Nos réalisations</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#blog">Blog</a></li>
+  <li><a href="#home" onclick="closeMenu()">Accueil</a></li>
+  <li><a href="#valeurs" onclick="closeMenu()">Nos valeurs</a></li>
+  <li><a href="#prestations" onclick="closeMenu()">Nos prestations</a></li>
+  <li><a href="#realisations" onclick="closeMenu()">Nos réalisations</a></li>
+  <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+  <li><a href="#blog" onclick="closeMenu()">Blog</a></li>
 </ul>
 
   </nav>
